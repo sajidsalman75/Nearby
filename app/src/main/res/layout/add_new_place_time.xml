@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorMaroon"
+            app:titleTextColor="@color/colorWhite"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <TextView
+            android:id="@+id/openingTimeTitle"
+            android:padding="10dp"
+            android:layout_below="@id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opening Time"
+            android:textSize="30dp"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/openingTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/openingTimeTitle"
+            android:onClick="etOpeningTimeClicked"
+            android:padding="10dp"
+            android:text="Click to add time" />
+
+        <TextView
+            android:id="@+id/closingTimeTitle"
+            android:textSize="30dp"
+            android:padding="10dp"
+            android:layout_below="@id/openingTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Closing Time"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/closingTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/closingTimeTitle"
+            android:onClick="etClosingTimeClicked"
+            android:padding="10dp"
+            android:text="Click to add time" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

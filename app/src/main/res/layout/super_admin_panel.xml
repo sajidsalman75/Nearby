@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rt1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorMaroon"
+            app:titleTextColor="@color/colorWhite"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <ScrollView
+            android:layout_below="@id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_marginTop="10dp"
+                    android:textSize="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:text="@string/superAdminPanel"/>
+
+                <Button
+                    android:id="@+id/btnGetAllAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnGetAllAdminClicked"
+                    android:layout_below="@id/tvTitle"
+                    android:text="@string/getAllAdmin" />
+
+                <Button
+                    android:id="@+id/btnGetAllUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnGetAllAdmin"
+                    android:onClick="btnGetAllUserClicked"
+                    android:text="@string/getAllUser" />
+
+                <Button
+                    android:id="@+id/btnSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnGetAllUser"
+                    android:onClick="btnSearchClicked"
+                    android:text="@string/search" />
+
+                <Button
+                    android:id="@+id/btnAddPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnSearch"
+                    android:onClick="btnAddPlaceClicked"
+                    android:text="@string/addPlace" />
+
+                <Button
+                    android:id="@+id/btnEditPlace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnAddPlace"
+                    android:onClick="btnEditPlaceClicked"
+                    android:text="@string/editPlaceInfo" />
+
+                <Button
+                    android:id="@+id/btnEditProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnEditPlace"
+                    android:onClick="btnEditProfileClicked"
+                    android:text="@string/editProfile" />
+
+                <Button
+                    android:id="@+id/btnAddCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnEditProfile"
+                    android:onClick="btnAddCityClicked"
+                    android:text="Add City" />
+
+                <Button
+                    android:id="@+id/btnAddTown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnAddCity"
+                    android:onClick="btnAddTownClicked"
+                    android:text="Add Town" />
+
+                <Button
+                    android:id="@+id/btnAddCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnAddTown"
+                    android:onClick="btnAddCategoryClicked"
+                    android:text="Add Category" />
+
+                <Button
+                    android:id="@+id/btnAddSubcategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btnAddCategory"
+                    android:onClick="btnAddSubcategoryClicked"
+                    android:text="Add Sub Category" />
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

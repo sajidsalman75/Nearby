@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorMaroon"
+        app:titleTextColor="@color/colorWhite"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvAddPlace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addPlace"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="30dp"/>
+            <EditText
+                android:id="@+id/etName"
+                android:layout_below="@id/tvAddPlace"
+                android:padding="20dp"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:hint="@string/name"/>
+            <Spinner
+                android:id="@+id/spCity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/etName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+            </Spinner>
+            <Spinner
+                android:id="@+id/spTown"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/spCity"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+            </Spinner>
+            <Spinner
+                android:id="@+id/spCategory"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/spTown"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spSubCategory"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/spCategory"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:padding="20dp"
+                android:layout_margin="10dp"
+                android:layout_below="@id/spSubCategory"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address"
+                />
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_below="@id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner" />
+
+            <TimePicker
+                android:id="@+id/timePicker1"
+                android:layout_below="@id/timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner"/>
+
+            <LinearLayout
+                android:id="@+id/llPictures"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_below="@id/timePicker1"
+                android:layout_height="100dp">
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"/>
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"/>
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"/>
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"/>
+                <ImageView
+                    android:id="@+id/iv5"
+                    android:layout_weight="1"
+                    android:layout_width="50dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llPictures"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:onClick="AddButtonClicked"
+                android:text="@string/addPlace" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Find Places</string>
+    <string-array name="spCity">
+        <item>--- Select a City ---</item>
+        <item>Lahore</item>
+        <item>Quetta</item>
+        <item>Peshawer</item>
+        <item>Karachi</item>
+        <item>Islamabad</item>
+    </string-array>
+
+    <string-array name="spCategory">
+        <item>--- Select a Category ---</item>
+        <item>Offices</item>
+        <item>Food</item>
+        <item>Hospitals</item>
+        <item>Mosque</item>
+        <item>Park</item>
+        <item>Entertainment</item>
+        <item>Education</item>
+    </string-array>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="email">Email</string>
+    <string name="city">City</string>
+    <string name="category">Category</string>
+    <string name="password">Password</string>
+    <string name="addAdmin">Add Admin</string>
+    <string name="addPlace">Add New Place</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="delete">Delete</string>
+    <string name="viewAll">View All</string>
+    <string name="adminPanel">Admin Panel</string>
+    <string name="searchPlace">Search Places</string>
+    <string name="editPlaceInfo">Edit Place Information</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="search">Search</string>
+    <string name="userPanel">User Panel</string>
+    <string name="superAdminPanel">Super Admin Panel</string>
+    <string name="logout">Logout</string>
+    <string name="update">Update</string>
+    <string name="getAllAdmin">Get All Admins</string>
+    <string name="getAllUser">Get All Users</string>
+    <string name="removeAdmin">Remove as Admin</string>
+    <string name="exitString">Do you want to exit?</string>
+    <string name="logoutString">Do you want to Logout?</string>
+    <string name="exit">Exit Application</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="disable">Disable User</string>
+</resources>
